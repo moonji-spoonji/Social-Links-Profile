@@ -1,0 +1,92 @@
+:root {
+    /* Colors */
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%); 
+    --gray-700: hsl(0, 0%, 20%); /* Gray 700 - use for the buttons */
+    --gray-800: hsl(0, 0%, 12%); /* Gray 800 - use for the card background*/
+    --gray-900: hsl(0, 0%, 8%); /* Gray 900 - use for the page background */
+}
+
+body {
+    background-color: var(--gray-900); 
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+
+    /* center the card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100svh;
+
+    /* display: grid;
+    place-items: center;
+    */
+}
+
+img {
+    border-radius: 50%;
+    width: 8rem;
+}
+
+h1 {
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+p, a {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.user-description {
+    margin-bottom: 2em;
+}
+
+.card {
+    background-color: var(--gray-800);
+    color: var(--white);
+    width: 350px;
+    padding: 2em;
+
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+@media (max-width: 476px) {
+    .card {
+        width: 300px;
+        padding: 1.5em;
+    }
+}
+
+.location {
+    color: var(--green);
+    font-size: 16px; 
+    margin: 5px;
+    padding-bottom: 10px;
+}
+
+.button, button {
+    background-color: var(--gray-700); 
+    color: var(--white);
+    width: 100%;
+    padding: 15px 0px;
+    margin: 15px 0px;
+    
+    display: block;
+    border: none; /* if using the button element instead of button class */
+    border-radius: 10px;
+    
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none; /* to remove underline for anchor href element */
+}
+
+.button:hover, button:hover {
+    background-color: var(--green);
+    color: var(--gray-800);
+}
