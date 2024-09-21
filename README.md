@@ -25,6 +25,7 @@ Users should be able to:
 
 Frontend Mentor's Desktop Design
 ![Frontend Mentor Desktop Design](./design/destkop-design.jpg)
+My solution: 
 ![My solution to the desktop design](my_solution.png)
 
 ### Links
